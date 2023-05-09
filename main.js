@@ -51,24 +51,6 @@ function showFindSolutionsToSystemBySimpleIteration(div, XYe) {
     getTextarea(div, str)
 }
 
-
-
-function showRunge(div, elements) {
-    let result = elements[0];
-    let e = elements[1];
-
-    let str = `с точностью e = ${e} значение интеграла равно: ${result}`
-
-    getTextarea(div, str)
-}
-
-function showGaussQuadrature(div, result) {
-    result =  1.2856374157956632;
-    let str = `значение интеграла по квадратурам Гаусса равно: ${result}`
-
-    getTextarea(div, str)
-}
-
 function getTextarea(div, str) {
     for (let node of div.childNodes) {
         if(node.nodeName === "TEXTAREA") {
